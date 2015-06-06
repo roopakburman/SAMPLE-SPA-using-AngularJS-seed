@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+
+</head>
+<body>
+
+<div class="myDiv" ng-controller="View1Ctrl">
+  <div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <!-- <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p> -->
+        </div>
+      </slide>
+    </carousel>
+  </div>
+
+</div>
+<script>
+var logoHeight = $('#myDiv img').height();
+    if (logoHeight < 104) {
+        var margintop = (104 - logoHeight) / 2;
+        $('#myDiv img').css('margin-top', margintop);
+    }
+</script>
+</body>
+</html>

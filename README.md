@@ -1,3 +1,6 @@
-PA-using-AngularJS-seed
 Single Page Application using Angular Seed
->>>>>>> 7ac9c89f75798726c7b596461d9daeee446b5837
+
+
+First attempt to create a single page application using AngularJS Seed. 
+
+Will keep on updating the repository and make it look better. 
